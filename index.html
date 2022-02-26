@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadados do html-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Codigo para inserir o css e a imagem-->
+<link rel="stylesheet" type="text/css" href="index.css" media="screen">
+<link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+
+<!--Titulo do navegador-->
+    <title>Labzone</title>
+
+    <!--Script para o google oauth-->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+
+</head>
+
+<body>
+
+<form>
+ 
+    <!--logo do formulario-->
+    <img src="imagens/logo.png" alt="">
+
+    <fieldset class="grupo">
+
+        <!--Div para o preechimento do formulario-->
+        <div class="campo">
+            <label for="fullname"><strong>Nome completo:</strong></label>
+            <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+        </div>
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required placeholder="Digite seu email">
+        </div>
+
+        <div class="campo">
+            <label for="senha">Senha:</label>
+            <input type="password" required placeholder="Digite sua senha">
+        </div>
+<br>
+        <!--Botao do formulario-->
+        <button class="botão" type="submit">Entrar:</button>
+
+        <a href="/">
+            <p>Esqueci a senha</p>
+        </a>
+<br>
+        <!--Div do botao faça login com o Google-->
+     <div id="g_id_onload"
+     data-client_id=""
+     data-context="signin"
+     data-ux_mode="popup"
+     data-auto_prompt="true">
+</div>
+
+<!--Div da personalizaçao do botao-->
+<div class="g_id_signin"
+     data-type="icon"
+     data-shape="circle"
+     data-theme="filled_black"
+     data-text="$ {button.text}"
+     data-size="large"
+     data-locale="pt-BR"
+     data-logo_alignment="center"
+     data-width="400">
+</div>
+
+    </fieldset>
+</form>
+
+<script src="javascript/google.js"></script>
+
+</body>
+</html>

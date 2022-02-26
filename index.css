@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#check {
+    display: inline-block;
+}
+
+fieldset{
+    border: 0;
+}
+
+/*Background especifica o plano de fundo para uma imagem*/
+body{
+    background-color: #87CEFA;
+    font-family: sans-serif;
+    color: #1E90FF;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+    background-image: url("imagens/wallhaven-nrkg61.jpg");
+    background-position: center;
+    border-radius: 15px;
+    height: 100vh;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Display especifica o tipo de caixa de renderização usada por um elemento*/
+form {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+/*Object-fit destina-se a controlar a forma como o conteúdo preenche seu container(que é um componente do bootstrap que garante que o seu layout vai ficar alinhado)*/
+img{
+    width: 80px;
+    object-fit: contain;
+}
+
+/*Input é usado para criar controles interativos p/ formularios baseados na web p/ receber dados do usúario*/
+input{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 300px;
+
+}
+
+a {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+/* Rem é o tamanho da fonte do elemento raiz do documento, ele é constante em todo o documento*/
+button {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 300px;
+}
+
+p {
+    color: #1C1C1C;
+    border-radius: 2px;
+}
+
+/* campo é uma classe e a class é uma lista de um elemento separada por espaço e permitem a css e js selecionar e acessar elementos especifico atraves de seletores de classe ou funçoes como o metodo DOM document.*/
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #F0F8FF;
+    display: block;
+}
